@@ -1,0 +1,35 @@
+*{
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.hero-Image{
+  width: 60%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.sneaker-name{
+  font-weight: bold;
+  color: #D68C00;
+}
+
+.menu-icon{
+	display: none;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+
+	}
+	50% {
+		transform: translatey(-20px);
+
+	}
+	100% {
+		transform: translatey(0px);
+
+	}
+}
