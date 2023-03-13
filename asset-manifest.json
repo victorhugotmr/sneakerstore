@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sneakerstore/static/css/main.d4a92b15.css",
+    "main.js": "/sneakerstore/static/js/main.3c7defe3.js",
+    "static/media/sneaker.png": "/sneakerstore/static/media/sneaker.bbf87288e28f37dd9a4b.png",
+    "static/media/sneakerstore-logo.png": "/sneakerstore/static/media/sneakerstore-logo.1a31117b59f17e35311e.png",
+    "index.html": "/sneakerstore/index.html",
+    "main.d4a92b15.css.map": "/sneakerstore/static/css/main.d4a92b15.css.map",
+    "main.3c7defe3.js.map": "/sneakerstore/static/js/main.3c7defe3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4a92b15.css",
+    "static/js/main.3c7defe3.js"
+  ]
+}
