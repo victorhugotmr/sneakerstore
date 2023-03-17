@@ -19,22 +19,6 @@ import {
   Toolbar,
   Button,
 } from "@mui/material";
-import { createTheme } from "@mui/system";
-import { ThemeProvider } from "@mui/styles";
-
-// cria um tema para alterar os breakpoints
-// da responsividade de acordo com o projeto
-// const theme = createTheme({
-//   breakpoints: {
-//     values: {
-//       xs: 0,
-//       sm: 770,
-//       md: 900,
-//       lg: 1280,
-//       xl: 1920,
-//     },
-//   },
-// });
 
 //cria uma constante que armazena
 // a largura do drawer (mobile)
@@ -139,7 +123,7 @@ function Header(props) {
   return (
     //  ThemeProvider para usar um tema criado previamente
     //  e que esta declarado ao lado
-    <ThemeProvider>
+    
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
         <AppBar
@@ -180,14 +164,14 @@ function Header(props) {
                   display: 'none',
                 },
               }}>
-                <Grid xs={2} sm={3}>
+                <Grid item xs={2} sm={3}>
                 <img
                     src={require("../../../images/sneakerstore-logo-horizontal.png")}
                     alt="Sneaker Store logo"
                     style={{ width: "-webkit-fill-available" }}
                   />
                 </Grid>
-                <Grid xs={10} sm={9} sx={{ display: "flex", justifyContent: "end"}}>
+                <Grid item xs={10} sm={9} sx={{ display: "flex", justifyContent: "end"}}>
                 {navItems.map((item) => (
                     <Box key={item.button.link}>
                       {item.button.text.map((text, index) => (
@@ -238,7 +222,6 @@ function Header(props) {
           </Drawer>
         </Box>
       </Box>
-    </ThemeProvider>
   );
 }
 
