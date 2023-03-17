@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Grid, ThemeProvider } from "@mui/material";
-
+import { useEffect } from "react";
 import theme from "./theme/Theme";
 
 // importacao dos componentes
@@ -17,6 +17,15 @@ import {
 } from "./components";
 
 function App() {
+
+  // faz a solicitação da notificação
+  useEffect(() => {
+    if ("Notification" in window && Notification.permission !== "granted") {
+      Notification.requestPermission();
+    }
+  }, []);
+
+
   return (
     <ThemeProvider theme={theme}>
       <Grid container direction="column">
