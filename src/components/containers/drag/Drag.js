@@ -96,6 +96,11 @@ export default function Drag() {
           sm: "100%",
         },
         flexWrap: "nowrap",
+        // media query para esconder em dispotivos móveis
+        // uma vez que o código não estava funcionando em touch
+        '@media (max-width: 803px)': {
+          display: 'none',
+        }
       }}
     >
       <Grid item>
