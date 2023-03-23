@@ -155,6 +155,16 @@ export default function Forms() {
     // abre um modal
     // ao ser enviado
     handleOpen()
+    
+    // notificação após o 
+    // formulário ser enviado
+    if ("Notification" in window && Notification.permission === "granted") {
+      const options = {
+        body: "Em breve você receberá as novidades do mundo sneaker",
+        icon: "../../../images/favicon.png",
+      };
+      new Notification("Formulário enviado com sucesso!", options);
+    }
   };
 
   return (
