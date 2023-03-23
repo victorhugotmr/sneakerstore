@@ -161,7 +161,7 @@ export default function Forms() {
     if ("Notification" in window && Notification.permission === "granted") {
       const options = {
         body: "Em breve você receberá as novidades do mundo sneaker",
-        icon: "../../../images/favicon.png",
+        icon: "https://i.imgur.com/cVcASRr.png",
       };
       new Notification("Formulário enviado com sucesso!", options);
     }
