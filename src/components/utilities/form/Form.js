@@ -164,7 +164,7 @@ export default function Forms() {
         icon: "https://i.imgur.com/cVcASRr.png",
       };
       new Notification("Formulário enviado com sucesso!", options);
-    }
+    };
   };
 
   return (
