@@ -14,6 +14,7 @@ import {
   SearchSneaker,
   MapContainer,
   FormContainer,
+  Drag
 } from "./components";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Content />
           <SearchSneaker />
           <Spacing />
+          <Drag/>
           <MapContainer />
           <Spacing />
           <FormContainer />
